@@ -76,8 +76,8 @@ FlirtGPT/
 ├── popup.css        # Modern styling with animations
 ├── popup.js         # Core functionality & API integration
 ├── background.js    # Service worker
-├── content.js       # Web page interaction
-└── test.html       # Testing interface
+└── content.js       # Web page interaction
+
 ```
 
 ### Permissions
