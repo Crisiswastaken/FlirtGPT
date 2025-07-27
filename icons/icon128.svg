@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4A90E2" stroke="#357ABD" stroke-width="4"/>
+  
+  <!-- Chat bubble -->
+  <path d="M84 45H44C38.4772 45 34 49.4772 34 55V71C34 76.5228 38.4772 81 44 81H50L58 89L66 81H84C89.5228 81 94 76.5228 94 71V55C94 49.4772 89.5228 45 84 45Z" fill="white"/>
+  
+  <!-- Heart icon inside bubble -->
+  <path d="M64 75L58.545 70.116C53.8 65.8 51 62.32 51 58.12C51 54.64 53.64 52 57.12 52C59.07 52 60.945 52.91 62.25 54.28L64 56.12L65.75 54.28C67.055 52.91 68.93 52 70.88 52C74.36 52 77 54.64 77 58.12C77 62.32 74.2 65.8 69.455 70.116L64 75Z" fill="#E74C3C"/>
+  
+  <!-- Sparkle effects -->
+  <circle cx="45" cy="30" r="3" fill="#FFD700"/>
+  <circle cx="85" cy="25" r="2" fill="#FFD700"/>
+  <circle cx="100" cy="50" r="2.5" fill="#FFD700"/>
+  <circle cx="25" cy="60" r="2" fill="#FFD700"/>
+  <circle cx="35" cy="95" r="3" fill="#FFD700"/>
+  <circle cx="95" cy="95" r="2" fill="#FFD700"/>
+</svg>

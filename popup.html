@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlirtGPT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="title-section">
+          <h1>FlirtGPT</h1>
+          <p>Generate context-aware flirt lines</p>
+        </div>
+        <div class="avatar">✨</div>
+      </div>
+      
+      <div class="section prompt-config">
+        <div class="dropdown-group">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="warm-wholesome">🍯 Warm & Wholesome</option>
+            <option value="bold-direct">🔥 Bold & Direct</option>
+            <option value="witty-playful">✨ Witty & Playful</option>
+          </select>
+        </div>
+        
+        <div class="dropdown-group">
+          <label for="personality">Personality</label>
+          <select id="personality">
+            <option value="charming-romantic">💕 Charming Romantic</option>
+            <option value="casual-gen-z">📱 Casual Gen-Z</option>
+            <option value="chaotic-rizzlord">🧨 Chaotic Rizzlord</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="section-divider"></div>
+      
+      <div class="section api-config">
+        <div class="dropdown-group">
+          <label for="api-key">Gemini API Key</label>
+          <div class="input-wrapper">
+            <input type="text" id="api-key" placeholder="Enter your Gemini API key..." autocomplete="off">
+            <button id="clear-key-btn" class="clear-btn" title="Clear API key" style="display: none;">×</button>
+          </div>
+          <div id="api-key-warning" class="api-key-warning">Please enter your Gemini API key to continue.</div>
+        </div>
+        
+        <button id="generate-btn" class="primary-btn">
+          <span class="btn-text">Generate Flirt Line</span>
+          <div class="loading-spinner" style="display: none;"></div>
+        </button>
+      </div>
+      
+      <div class="section-divider" id="output-divider" style="display: none;"></div>
+      
+      <div class="section output-section">
+        <div id="result-area" class="result-area" style="display: none;">
+          <div class="flirt-bubble">
+            <div class="bubble-content">
+              <span class="bubble-emoji">💬</span>
+              <p id="flirt-line"></p>
+            </div>
+            <button id="copy-btn" class="copy-bubble-btn" title="Copy to clipboard">
+              📋
+            </button>
+          </div>
+          
+          <div class="action-buttons">
+            <button id="try-again-btn" class="secondary-btn">Try Again</button>
+          </div>
+        </div>
+        
+        <div id="error-area" class="error-area" style="display: none;">
+          <p id="error-message"></p>
+          <button id="retry-btn" class="secondary-btn">Retry</button>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Rizz responsibly ✨</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toast" class="toast" style="display: none;"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
